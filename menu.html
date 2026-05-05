@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>La carte — SMASH Châteauroux | Smash burgers, brunch & bar</title>
+  <meta name="description" content="La carte du restaurant SMASH à Châteauroux : smash burgers maison, accompagnements, brunch, desserts et bar. Produits locaux, prix accessibles, 7j/7." />
+  <meta name="theme-color" content="#dc2626" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://REMPLACER-PAR-DOMAINE.fr/menu" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="La carte — SMASH Châteauroux" />
+  <meta property="og:description" content="Burgers smashés maison, brunch, bar. Découvrez la carte." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://REMPLACER-PAR-DOMAINE.fr/menu" />
+  <meta property="og:image" content="https://REMPLACER-PAR-DOMAINE.fr/images/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "Carte SMASH",
+    "inLanguage": "fr-FR",
+    "hasMenuSection": [
+      { "@type": "MenuSection", "name": "Smash burgers" },
+      { "@type": "MenuSection", "name": "À côté" },
+      { "@type": "MenuSection", "name": "Brunch" },
+      { "@type": "MenuSection", "name": "Desserts" },
+      { "@type": "MenuSection", "name": "Boissons & Bar" }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-cream text-charcoal font-body">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-charcoal focus:text-white focus:px-4 focus:py-2 focus:rounded">Aller au contenu</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b-2 border-charcoal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="font-display text-3xl tracking-wider text-charcoal" aria-label="Retour à l'accueil SMASH">SMASH</a>
+      <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="font-display text-xl tracking-wide hover:text-smash transition">Accueil</a>
+        <a href="menu.html" class="font-display text-xl tracking-wide text-smash" aria-current="page">Menu</a>
+        <a href="histoire.html" class="font-display text-xl tracking-wide hover:text-smash transition">Histoire</a>
+        <a href="contact.html" class="font-display text-xl tracking-wide hover:text-smash transition">Contact</a>
+        <a href="reservation.html" class="bg-smash hover:bg-smashDark text-white font-display text-xl tracking-wider px-5 py-2 rounded-md transition">Réserver</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden p-2 text-charcoal" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu md:hidden border-t-2 border-charcoal bg-cream">
+      <nav class="flex flex-col px-6 py-4 gap-3" aria-label="Navigation mobile">
+        <a href="index.html" class="font-display text-2xl">Accueil</a>
+        <a href="menu.html" class="font-display text-2xl">Menu</a>
+        <a href="histoire.html" class="font-display text-2xl">Histoire</a>
+        <a href="contact.html" class="font-display text-2xl">Contact</a>
+        <a href="reservation.html" class="bg-smash text-white font-display text-2xl text-center py-3 rounded-md">Réserver une table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero menu -->
+    <section class="bg-charcoal text-cream py-16 sm:py-20 text-center">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <p class="accent-marker text-mustard text-2xl mb-2">La carte</p>
+        <h1 class="font-display text-6xl sm:text-8xl tracking-wider">Le menu</h1>
+        <p class="mt-4 text-lg text-cream/85">Carte courte, mise à jour selon les arrivages. Tout est fait maison, ici, dans notre cuisine.</p>
+      </div>
+    </section>
+
+    <!-- Sticky sub-nav -->
+    <nav aria-label="Sections du menu" class="sticky top-16 z-30 bg-mustard border-y-2 border-charcoal">
+      <ul class="max-w-7xl mx-auto px-4 sm:px-6 flex gap-2 sm:gap-6 overflow-x-auto no-scrollbar font-display text-lg tracking-wider py-3">
+        <li><a class="px-3 py-1 hover:text-smash whitespace-nowrap" href="#burgers">Burgers</a></li>
+        <li><a class="px-3 py-1 hover:text-smash whitespace-nowrap" href="#sides">À côté</a></li>
+        <li><a class="px-3 py-1 hover:text-smash whitespace-nowrap" href="#brunch">Brunch</a></li>
+        <li><a class="px-3 py-1 hover:text-smash whitespace-nowrap" href="#desserts">Desserts</a></li>
+        <li><a class="px-3 py-1 hover:text-smash whitespace-nowrap" href="#boissons">Boissons & Bar</a></li>
+      </ul>
+    </nav>
+
+    <!-- Burgers -->
+    <section id="burgers" class="py-16 sm:py-20 bg-cream scroll-mt-32" aria-labelledby="burgers-title">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <header class="mb-10">
+          <p class="section-eyebrow text-smash text-xl">Le cœur du sujet</p>
+          <h2 id="burgers-title" class="font-display text-5xl sm:text-6xl tracking-wide">Smash burgers</h2>
+          <p class="text-charcoal/70 mt-2">Servis avec frites maison. Bun brioché toasté à la plancha.</p>
+        </header>
+        <ul class="space-y-6 sm:space-y-7">
+          <li class="border-b-2 border-dotted border-charcoal/20 pb-5">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-display text-3xl sm:text-4xl tracking-wide">Le Classic</h3>
+              <span class="dotted-fill" aria-hidden="true"></span>
+              <span class="font-display text-2xl sm:text-3xl text-smash whitespace-nowrap">9,90 €</span>
+            </div>
+            <p class="text-charcoal/80 mt-1">Double steak smashé, cheddar fondu, oignons rôtis, sauce maison, bun brioché.</p>
+          </li>
+          <li class="border-b-2 border-dotted border-charcoal/20 pb-5">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-display text-3xl sm:text-4xl tracking-wide">Le Berry <span class="accent-marker text-base text-mustard ml-1">local</span></h3>
+              <span class="dotted-fill" aria-hidden="true"></span>
+              <span class="font-display text-2xl sm:text-3xl text-smash whitespace-nowrap">11,90 €</span>
+            </div>
+            <p class="text-charcoal/80 mt-1">Steak smashé, fromage de chèvre, lentilles vertes du Berry, oignons confits, miel local.</p>
+          </li>
+          <li class="border-b-2 border-dotted border-charcoal/20 pb-5">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-display text-3xl sm:text-4xl tracking-wide">Le BBQ</h3>
+              <span class="dotted-fill" aria-hidden="true"></span>
+              <span class="font-display text-2xl sm:text-3xl text-smash whitespace-nowrap">12,90 €</span>
+            </div>
+            <p class="text-charcoal/80 mt-1">Triple steak smashé, bacon fumé, cheddar, sauce BBQ maison, pickles d'oignons rouges.</p>
+          </li>
+          <li class="border-b-2 border-dotted border-charcoal/20 pb-5">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-display text-3xl sm:text-4xl tracking-wide">Le Smash Bleu</h3>
+              <span class="dotted-fill" aria-hidden="true"></span>
+              <span class="font-display text-2xl sm:text-3xl text-smash whitespace-nowrap">12,50 €</span>
+            </div>
+            <p class="text-charcoal/80 mt-1">Double steak smashé, fourme de Montbrison, oignons caramélisés, mayo poivre noir.</p>
+          </li>
+          <li class="border-b-2 border-dotted border-charcoal/20 pb-5">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-display text-3xl sm:text-4xl tracking-wide">Le Veggie <span class="accent-marker text-base text-mustard ml-1">veggie</span></h3>
+              <span class="dotted-fill" aria-hidden="true"></span>
+              <span class="font-display text-2xl sm:text-3xl text-smash whitespace-nowrap">10,90 €</span>
+            </div>
+            <p class="text-charcoal/80 mt-1">Galette pois chiche & herbes, halloumi grillé, aubergine fumée, pesto maison.</p>
+          </li>
+          <li class="pb-5">
+            <div class="flex items-baseline gap-2">
+              <h3 class="font-display text-3xl sm:text-4xl tracking-wide">Le Poulet Crispy</h3>
+              <span class="dotted-fill" aria-hidden="true"></span>
+              <span class="font-display text-2xl sm:text-3xl text-smash whitespace-nowrap">10,90 €</span>
+            </div>
+            <p class="text-charcoal/80 mt-1">Filet de poulet pané, slaw maison, sauce piquante douce, bun brioché.</p>
+          </li>
+        </ul>
+
+        <!-- Smash Box -->
+        <aside class="mt-10 bg-charcoal text-cream p-6 sm:p-8 rounded-lg flex flex-col sm:flex-row items-start sm:items-center gap-6 justify-between">
+          <div>
+            <p class="accent-marker text-mustard mb-1">Smash Box</p>
+            <h3 class="font-display text-3xl sm:text-4xl tracking-wide">Burger + frites + boisson</h3>
+            <p class="text-cream/80 mt-1">Le combo malin, dispo sur tous les burgers.</p>
+          </div>
+          <span class="font-display text-3xl text-mustard whitespace-nowrap">+ 3,00 €</span>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Sides -->
+    <section id="sides" class="py-16 sm:py-20 bg-paper scroll-mt-32" aria-labelledby="sides-title">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <header class="mb-8">
+          <p class="section-eyebrow text-smash text-xl">À côté</p>
+          <h2 id="sides-title" class="font-display text-5xl sm:text-6xl tracking-wide">Accompagnements</h2>
+        </header>
+        <ul class="grid sm:grid-cols-2 gap-x-10 gap-y-5">
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Frites maison</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">3,50 €</span>
+          </li>
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Frites cheddar &amp; bacon</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">6,50 €</span>
+          </li>
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Onion rings</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">4,50 €</span>
+          </li>
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Pickles maison</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">3,00 €</span>
+          </li>
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Salade verte, vinaigrette miel</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">3,50 €</span>
+          </li>
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Mac &amp; cheese maison</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">5,90 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Brunch -->
+    <section id="brunch" class="py-16 sm:py-20 bg-cream scroll-mt-32" aria-labelledby="brunch-title">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <header class="mb-8">
+          <p class="section-eyebrow text-smash text-xl">8h — 14h, 7j/7</p>
+          <h2 id="brunch-title" class="font-display text-5xl sm:text-6xl tracking-wide">Brunch</h2>
+          <p class="text-charcoal/70 mt-2">Sucré-salé, à composer. Café ou thé inclus dans la formule complète.</p>
+        </header>
+        <ul class="space-y-5">
+          <li class="flex items-baseline gap-2 border-b-2 border-dotted border-charcoal/20 pb-4">
+            <div>
+              <h3 class="font-display text-2xl sm:text-3xl tracking-wide">Œufs brouillés, bacon, pain de campagne</h3>
+              <p class="text-charcoal/80">Œufs fermiers, pain au levain de notre boulanger.</p>
+            </div>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl sm:text-2xl text-smash whitespace-nowrap">9,50 €</span>
+          </li>
+          <li class="flex items-baseline gap-2 border-b-2 border-dotted border-charcoal/20 pb-4">
+            <div>
+              <h3 class="font-display text-2xl sm:text-3xl tracking-wide">Pancakes, sirop d'érable</h3>
+              <p class="text-charcoal/80">Trois pancakes moelleux, beurre demi-sel.</p>
+            </div>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl sm:text-2xl text-smash whitespace-nowrap">7,90 €</span>
+          </li>
+          <li class="flex items-baseline gap-2 border-b-2 border-dotted border-charcoal/20 pb-4">
+            <div>
+              <h3 class="font-display text-2xl sm:text-3xl tracking-wide">Avocado toast œuf poché</h3>
+              <p class="text-charcoal/80">Avocat, tomates confites, citron, piment doux.</p>
+            </div>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl sm:text-2xl text-smash whitespace-nowrap">9,50 €</span>
+          </li>
+          <li class="flex items-baseline gap-2 border-b-2 border-dotted border-charcoal/20 pb-4">
+            <div>
+              <h3 class="font-display text-2xl sm:text-3xl tracking-wide">Bowl açaï &amp; granola maison</h3>
+              <p class="text-charcoal/80">Fruits frais, granola maison, miel local.</p>
+            </div>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl sm:text-2xl text-smash whitespace-nowrap">8,50 €</span>
+          </li>
+          <li class="flex items-baseline gap-2 pb-4">
+            <div>
+              <h3 class="font-display text-2xl sm:text-3xl tracking-wide">Le Smash Brunch <span class="accent-marker text-base text-mustard ml-1">complet</span></h3>
+              <p class="text-charcoal/80">Œuf, bacon, hash brown, mini smash burger, salade, boisson chaude.</p>
+            </div>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl sm:text-2xl text-smash whitespace-nowrap">16,90 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Desserts -->
+    <section id="desserts" class="py-16 sm:py-20 bg-paper scroll-mt-32" aria-labelledby="desserts-title">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <header class="mb-8">
+          <p class="section-eyebrow text-smash text-xl">Pour finir</p>
+          <h2 id="desserts-title" class="font-display text-5xl sm:text-6xl tracking-wide">Desserts</h2>
+        </header>
+        <ul class="grid sm:grid-cols-2 gap-x-10 gap-y-5">
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Cookie XXL chocolat noir</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">4,00 €</span>
+          </li>
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Brownie maison, glace vanille</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">6,00 €</span>
+          </li>
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Cheesecake spéculoos</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">6,50 €</span>
+          </li>
+          <li class="flex items-baseline gap-2">
+            <span class="font-display text-2xl tracking-wide">Milkshake (vanille, choco, caramel salé)</span>
+            <span class="dotted-fill" aria-hidden="true"></span>
+            <span class="font-display text-xl text-smash whitespace-nowrap">5,50 €</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Boissons / Bar -->
+    <section id="boissons" class="py-16 sm:py-20 bg-charcoal text-cream scroll-mt-32" aria-labelledby="bar-title">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <header class="mb-8">
+          <p class="section-eyebrow text-mustard text-xl">Sans alcool & bar</p>
+          <h2 id="bar-title" class="font-display text-5xl sm:text-6xl tracking-wide">Boissons & Bar</h2>
+          <p class="text-cream/75 mt-2">Sodas maison, bières locales, cocktails signature, vins de vignerons indépendants.</p>
+        </header>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="font-display text-2xl tracking-wide text-mustard mb-3">Sans alcool</h3>
+            <ul class="space-y-3">
+              <li class="flex items-baseline gap-2">
+                <span>Sodas maison (citron-basilic, fraise-romarin)</span>
+                <span class="dotted-fill border-cream/30" aria-hidden="true"></span>
+                <span class="font-display text-lg text-mustard whitespace-nowrap">4,50 €</span>
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span>Limonade maison</span>
+                <span class="dotted-fill border-cream/30" aria-hidden="true"></span>
+                <span class="font-display text-lg text-mustard whitespace-nowrap">4,00 €</span>
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span>Café, thé</span>
+                <span class="dotted-fill border-cream/30" aria-hidden="true"></span>
+                <span class="font-display text-lg text-mustard whitespace-nowrap">2,00 €</span>
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span>Jus de fruits frais</span>
+                <span class="dotted-fill border-cream/30" aria-hidden="true"></span>
+                <span class="font-display text-lg text-mustard whitespace-nowrap">5,00 €</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-display text-2xl tracking-wide text-mustard mb-3">Bar</h3>
+            <ul class="space-y-3">
+              <li class="flex items-baseline gap-2">
+                <span>Bière pression locale (25 / 50 cl)</span>
+                <span class="dotted-fill border-cream/30" aria-hidden="true"></span>
+                <span class="font-display text-lg text-mustard whitespace-nowrap">4,50 / 6,50 €</span>
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span>Cocktails signature</span>
+                <span class="dotted-fill border-cream/30" aria-hidden="true"></span>
+                <span class="font-display text-lg text-mustard whitespace-nowrap">9,00 €</span>
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span>Vin au verre (sélection vigneron)</span>
+                <span class="dotted-fill border-cream/30" aria-hidden="true"></span>
+                <span class="font-display text-lg text-mustard whitespace-nowrap">5,00 / 7,00 €</span>
+              </li>
+              <li class="flex items-baseline gap-2">
+                <span>Spritz, mocktails, shots</span>
+                <span class="dotted-fill border-cream/30" aria-hidden="true"></span>
+                <span class="font-display text-lg text-mustard whitespace-nowrap">à la carte</span>
+              </li>
+            </ul>
+            <p class="text-xs text-cream/60 mt-4">L'abus d'alcool est dangereux pour la santé. À consommer avec modération.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA réservation -->
+    <section class="py-16 bg-mustard text-charcoal text-center">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <h2 class="font-display text-4xl sm:text-5xl tracking-wide mb-4">Une table chez SMASH ?</h2>
+        <p class="mb-6">Carte courte, places limitées. Mieux vaut réserver, surtout le week-end.</p>
+        <a href="reservation.html" class="inline-block bg-charcoal text-cream font-display text-2xl tracking-wider px-8 py-4 rounded-md hover:bg-smash transition">Réserver une table</a>
+      </div>
+    </section>
+
+    <p class="text-center text-xs text-charcoal/60 py-6 px-4">Carte donnée à titre indicatif. Susceptible d'évoluer selon les arrivages. Allergènes : nous interroger.</p>
+  </main>
+
+  <footer class="bg-charcoal text-cream py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div>
+        <p class="font-display text-4xl tracking-wider">SMASH</p>
+        <p class="text-cream/70 mt-2 text-sm">Smash burgers · Brunch · Bar<br/>Châteauroux, 36000</p>
+      </div>
+      <nav aria-label="Liens du pied de page">
+        <h4 class="font-display text-xl mb-3 tracking-wide">Navigation</h4>
+        <ul class="space-y-1 text-cream/80">
+          <li><a class="hover:text-mustard" href="index.html">Accueil</a></li>
+          <li><a class="hover:text-mustard" href="menu.html">Menu</a></li>
+          <li><a class="hover:text-mustard" href="reservation.html">Réservation</a></li>
+          <li><a class="hover:text-mustard" href="histoire.html">Histoire</a></li>
+          <li><a class="hover:text-mustard" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4 class="font-display text-xl mb-3 tracking-wide">Horaires</h4>
+        <p class="text-cream/80">7j/7<br/>Brunch · 8h — 14h<br/>Soir · 19h — 2h</p>
+      </div>
+      <div>
+        <h4 class="font-display text-xl mb-3 tracking-wide">Suivez-nous</h4>
+        <ul class="space-y-1 text-cream/80">
+          <li><a class="hover:text-mustard" href="#" rel="noopener">Instagram</a></li>
+          <li><a class="hover:text-mustard" href="#" rel="noopener">Facebook</a></li>
+          <li><a class="hover:text-mustard" href="#" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 pt-6 border-t border-cream/20 text-cream/60 text-sm flex flex-col sm:flex-row gap-2 justify-between">
+      <p>© <span data-current-year>2026</span> SMASH — Tous droits réservés.</p>
+      <p>Conçu avec exigence à Châteauroux.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMASH — Smash burgers, brunch & bar à Châteauroux | Restaurant 7j/7</title>
+  <meta name="description" content="SMASH, restaurant de smash burgers à Châteauroux. Burgers maison, produits locaux, brunch et bar. Ouvert 7j/7. Voir le menu et réserver une table en ligne." />
+  <meta name="theme-color" content="#dc2626" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://REMPLACER-PAR-DOMAINE.fr/" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="SMASH — Smash burgers à Châteauroux" />
+  <meta property="og:description" content="Burgers maison, produits locaux, brunch et bar. Au cœur de Châteauroux, 7j/7." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://REMPLACER-PAR-DOMAINE.fr/" />
+  <meta property="og:image" content="https://REMPLACER-PAR-DOMAINE.fr/images/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "SMASH",
+    "description": "Restaurant de smash burgers, brunch et bar à Châteauroux. Burgers maison, produits locaux, prix accessibles.",
+    "image": "https://REMPLACER-PAR-DOMAINE.fr/images/og-cover.jpg",
+    "url": "https://REMPLACER-PAR-DOMAINE.fr/",
+    "telephone": "+33 X XX XX XX XX",
+    "servesCuisine": ["Burger", "Américaine", "Brunch", "Bar"],
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Adresse à compléter",
+      "addressLocality": "Châteauroux",
+      "postalCode": "36000",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 46.8118,
+      "longitude": 1.6913
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "08:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "19:00", "closes": "02:00" }
+    ],
+    "acceptsReservations": "True"
+  }
+  </script>
+</head>
+<body class="bg-cream text-charcoal font-body">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-charcoal focus:text-white focus:px-4 focus:py-2 focus:rounded">Aller au contenu</a>
+
+  <!-- Bandeau marquee -->
+  <div class="bg-charcoal text-cream text-sm py-2 overflow-hidden no-scrollbar" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="px-6">🔥 Smashés à la commande</span><span class="px-6">·</span>
+      <span class="px-6">🥩 Bœuf de l'Indre</span><span class="px-6">·</span>
+      <span class="px-6">🍞 Buns maison</span><span class="px-6">·</span>
+      <span class="px-6">📍 Châteauroux centre</span><span class="px-6">·</span>
+      <span class="px-6">⏰ 7j/7 — 8h-14h & 19h-2h</span><span class="px-6">·</span>
+      <span class="px-6">🔥 Smashés à la commande</span><span class="px-6">·</span>
+      <span class="px-6">🥩 Bœuf de l'Indre</span><span class="px-6">·</span>
+      <span class="px-6">🍞 Buns maison</span><span class="px-6">·</span>
+      <span class="px-6">📍 Châteauroux centre</span><span class="px-6">·</span>
+      <span class="px-6">⏰ 7j/7 — 8h-14h & 19h-2h</span><span class="px-6">·</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b-2 border-charcoal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="font-display text-3xl tracking-wider text-charcoal" aria-label="Retour à l'accueil SMASH">SMASH</a>
+      <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="font-display text-xl tracking-wide text-smash" aria-current="page">Accueil</a>
+        <a href="menu.html" class="font-display text-xl tracking-wide hover:text-smash transition">Menu</a>
+        <a href="histoire.html" class="font-display text-xl tracking-wide hover:text-smash transition">Histoire</a>
+        <a href="contact.html" class="font-display text-xl tracking-wide hover:text-smash transition">Contact</a>
+        <a href="reservation.html" class="bg-smash hover:bg-smashDark text-white font-display text-xl tracking-wider px-5 py-2 rounded-md transition">Réserver</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden p-2 text-charcoal" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu md:hidden border-t-2 border-charcoal bg-cream">
+      <nav class="flex flex-col px-6 py-4 gap-3" aria-label="Navigation mobile">
+        <a href="index.html" class="font-display text-2xl">Accueil</a>
+        <a href="menu.html" class="font-display text-2xl">Menu</a>
+        <a href="histoire.html" class="font-display text-2xl">Histoire</a>
+        <a href="contact.html" class="font-display text-2xl">Contact</a>
+        <a href="reservation.html" class="bg-smash text-white font-display text-2xl text-center py-3 rounded-md">Réserver une table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="relative bg-charcoal text-cream overflow-hidden">
+      <div class="absolute inset-0 opacity-30 pointer-events-none" aria-hidden="true" style="background-image: radial-gradient(circle at 18% 20%, #dc2626 0%, transparent 45%), radial-gradient(circle at 82% 80%, #f59e0b 0%, transparent 45%);"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-24 sm:py-32 text-center">
+        <p class="accent-marker text-mustard text-2xl sm:text-3xl mb-4">Bienvenue chez</p>
+        <h1 class="font-display text-7xl sm:text-9xl md:text-[10rem] leading-none tracking-wider">SMASH</h1>
+        <p class="font-display text-2xl sm:text-4xl tracking-widest mt-2 mb-8">Smash burgers · Brunch · Bar</p>
+        <p class="max-w-2xl mx-auto text-lg sm:text-xl mb-10 text-cream/90">Des burgers smashés à la plancha, des produits locaux, des prix qui restent doux. Au cœur de Châteauroux, 7 jours sur 7.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="menu.html" class="bg-smash hover:bg-smashDark text-white font-display text-2xl tracking-wider px-8 py-4 rounded-md transition">Voir le menu</a>
+          <a href="reservation.html" class="bg-cream hover:bg-mustard text-charcoal font-display text-2xl tracking-wider px-8 py-4 rounded-md transition">Réserver une table</a>
+        </div>
+        <p class="mt-8 text-sm text-cream/60">Châteauroux · 36000 — 7j/7 · 8h-14h & 19h-2h</p>
+      </div>
+    </section>
+
+    <!-- USP -->
+    <section class="py-20 sm:py-24 bg-cream" aria-labelledby="usp-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <p class="section-eyebrow text-smash text-center text-xl mb-2">Pourquoi nous</p>
+        <h2 id="usp-title" class="font-display text-5xl sm:text-6xl text-center mb-3">Trois engagements, zéro compromis</h2>
+        <p class="text-center text-charcoal/70 mb-14 max-w-xl mx-auto">SMASH n'est pas un fast-food. C'est une cuisine, une équipe, et une obsession : le bon goût, accessible.</p>
+        <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+          <article class="bg-white border-2 border-charcoal p-8 rounded-lg menu-card">
+            <div class="font-display text-6xl text-smash leading-none mb-3">01</div>
+            <h3 class="font-display text-3xl mb-2 tracking-wide">Fait maison</h3>
+            <p class="text-charcoal/80">Buns, sauces, frites coupées sur place. Tout est préparé dans notre cuisine, chaque jour, à la main.</p>
+          </article>
+          <article class="bg-white border-2 border-charcoal p-8 rounded-lg menu-card">
+            <div class="font-display text-6xl text-smash leading-none mb-3">02</div>
+            <h3 class="font-display text-3xl mb-2 tracking-wide">Produits locaux</h3>
+            <p class="text-charcoal/80">Bœuf de l'Indre, fromages affinés en Berry, légumes des maraîchers du coin. Circuit court, vraiment.</p>
+          </article>
+          <article class="bg-white border-2 border-charcoal p-8 rounded-lg menu-card">
+            <div class="font-display text-6xl text-smash leading-none mb-3">03</div>
+            <h3 class="font-display text-3xl mb-2 tracking-wide">Prix justes</h3>
+            <p class="text-charcoal/80">La qualité ne devrait pas être un luxe. On bosse pour qu'un bon burger reste accessible à tous.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaser menu -->
+    <section class="py-20 sm:py-24 bg-charcoal text-cream" aria-labelledby="teaser-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-14">
+          <p class="accent-marker text-mustard text-2xl mb-2">Les stars du moment</p>
+          <h2 id="teaser-title" class="font-display text-5xl sm:text-6xl tracking-wide">Notre carte</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="bg-cream text-charcoal p-6 rounded-lg menu-card border-2 border-cream">
+            <div class="flex items-baseline justify-between gap-3 mb-2">
+              <h3 class="font-display text-3xl tracking-wide">Le Classic</h3>
+              <span class="font-display text-2xl text-smash whitespace-nowrap">9,90 €</span>
+            </div>
+            <p class="text-charcoal/80">Double steak smashé, cheddar fondu, oignons rôtis, sauce maison, bun brioché.</p>
+          </article>
+          <article class="bg-cream text-charcoal p-6 rounded-lg menu-card border-2 border-cream">
+            <div class="flex items-baseline justify-between gap-3 mb-2">
+              <h3 class="font-display text-3xl tracking-wide">Le Berry</h3>
+              <span class="font-display text-2xl text-smash whitespace-nowrap">11,90 €</span>
+            </div>
+            <p class="text-charcoal/80">Steak smashé, fromage de chèvre, lentilles vertes du Berry, oignons confits, miel local.</p>
+          </article>
+          <article class="bg-cream text-charcoal p-6 rounded-lg menu-card border-2 border-cream">
+            <div class="flex items-baseline justify-between gap-3 mb-2">
+              <h3 class="font-display text-3xl tracking-wide">Le BBQ</h3>
+              <span class="font-display text-2xl text-smash whitespace-nowrap">12,90 €</span>
+            </div>
+            <p class="text-charcoal/80">Triple steak smashé, bacon fumé, cheddar, sauce BBQ maison, pickles d'oignons rouges.</p>
+          </article>
+        </div>
+        <div class="text-center mt-12">
+          <a href="menu.html" class="inline-block bg-mustard hover:bg-smash hover:text-white text-charcoal font-display text-2xl tracking-wider px-8 py-4 rounded-md transition">Voir la carte complète</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Histoire -->
+    <section class="py-20 sm:py-24 bg-cream" aria-labelledby="story-title">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="accent-marker text-smash text-2xl mb-2">Notre histoire</p>
+          <h2 id="story-title" class="font-display text-5xl sm:text-6xl mb-4 tracking-wide">Une cuisine, une obsession</h2>
+          <p class="text-lg text-charcoal/80 mb-4">SMASH, c'est l'idée d'un jeune chef de Châteauroux, 23 ans. Bac Pro hôtellerie-cuisine en poche, cinq années passées en cuisine à apprendre, observer, peaufiner. En 2026, il pose ses propres bases : un burger maison, une carte courte, une exigence haute.</p>
+          <a href="histoire.html" class="font-display text-xl tracking-wider underline decoration-smash decoration-4 underline-offset-4 hover:text-smash">Lire l'histoire complète →</a>
+        </div>
+        <div class="bg-charcoal text-cream p-8 sm:p-10 rounded-lg border-4 border-charcoal relative">
+          <span class="stamp absolute -top-5 -right-5 bg-mustard text-charcoal px-4 py-2 text-sm">Depuis 2026</span>
+          <blockquote class="font-display text-3xl sm:text-4xl leading-tight tracking-wide">« Faire mieux, plus simple, plus local. C'est tout ce qui compte. »</blockquote>
+          <p class="mt-4 text-cream/70">— Le chef</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infos pratiques -->
+    <section class="py-20 sm:py-24 bg-mustard" aria-labelledby="info-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <p class="section-eyebrow text-charcoal text-xl mb-2">Infos pratiques</p>
+        <h2 id="info-title" class="font-display text-5xl sm:text-6xl mb-12 tracking-wide">Venir chez nous</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="font-display text-3xl mb-2">Où</h3>
+            <p class="text-lg leading-snug">Châteauroux centre<br/>36000 — France<br/><span class="text-charcoal/70 text-sm">Adresse précise communiquée bientôt</span></p>
+          </div>
+          <div>
+            <h3 class="font-display text-3xl mb-2">Horaires</h3>
+            <p class="text-lg leading-snug">7 jours sur 7<br/>Brunch · 8h — 14h<br/>Soir · 19h — 2h</p>
+          </div>
+          <div>
+            <h3 class="font-display text-3xl mb-2">Réserver</h3>
+            <p class="text-lg leading-snug mb-3">Une table le soir ou le brunch, c'est par ici.</p>
+            <a href="reservation.html" class="inline-block bg-charcoal text-cream font-display text-xl tracking-wider px-6 py-3 rounded-md hover:bg-smash transition">Réserver</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-cream py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div>
+        <p class="font-display text-4xl tracking-wider">SMASH</p>
+        <p class="text-cream/70 mt-2 text-sm">Smash burgers · Brunch · Bar<br/>Châteauroux, 36000</p>
+      </div>
+      <nav aria-label="Liens du pied de page">
+        <h4 class="font-display text-xl mb-3 tracking-wide">Navigation</h4>
+        <ul class="space-y-1 text-cream/80">
+          <li><a class="hover:text-mustard" href="index.html">Accueil</a></li>
+          <li><a class="hover:text-mustard" href="menu.html">Menu</a></li>
+          <li><a class="hover:text-mustard" href="reservation.html">Réservation</a></li>
+          <li><a class="hover:text-mustard" href="histoire.html">Histoire</a></li>
+          <li><a class="hover:text-mustard" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4 class="font-display text-xl mb-3 tracking-wide">Horaires</h4>
+        <p class="text-cream/80">7j/7<br/>Brunch · 8h — 14h<br/>Soir · 19h — 2h</p>
+      </div>
+      <div>
+        <h4 class="font-display text-xl mb-3 tracking-wide">Suivez-nous</h4>
+        <ul class="space-y-1 text-cream/80">
+          <li><a class="hover:text-mustard" href="#" rel="noopener">Instagram</a></li>
+          <li><a class="hover:text-mustard" href="#" rel="noopener">Facebook</a></li>
+          <li><a class="hover:text-mustard" href="#" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 pt-6 border-t border-cream/20 text-cream/60 text-sm flex flex-col sm:flex-row gap-2 justify-between">
+      <p>© <span data-current-year>2026</span> SMASH — Tous droits réservés.</p>
+      <p>Conçu avec exigence à Châteauroux.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

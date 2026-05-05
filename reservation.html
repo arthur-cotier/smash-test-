@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réserver une table — SMASH Châteauroux</title>
+  <meta name="description" content="Réservez votre table au restaurant SMASH à Châteauroux. Brunch (8h-14h) ou soir (19h-2h), 7j/7. Formulaire en ligne, réponse rapide." />
+  <meta name="theme-color" content="#dc2626" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://REMPLACER-PAR-DOMAINE.fr/reservation" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Réserver une table — SMASH Châteauroux" />
+  <meta property="og:description" content="Réservez en ligne, brunch ou soir, 7j/7." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://REMPLACER-PAR-DOMAINE.fr/reservation" />
+  <meta property="og:image" content="https://REMPLACER-PAR-DOMAINE.fr/images/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-cream text-charcoal font-body">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-charcoal focus:text-white focus:px-4 focus:py-2 focus:rounded">Aller au contenu</a>
+
+  <header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b-2 border-charcoal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <a href="index.html" class="font-display text-3xl tracking-wider text-charcoal" aria-label="Retour à l'accueil SMASH">SMASH</a>
+      <nav aria-label="Navigation principale" class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="font-display text-xl tracking-wide hover:text-smash transition">Accueil</a>
+        <a href="menu.html" class="font-display text-xl tracking-wide hover:text-smash transition">Menu</a>
+        <a href="histoire.html" class="font-display text-xl tracking-wide hover:text-smash transition">Histoire</a>
+        <a href="contact.html" class="font-display text-xl tracking-wide hover:text-smash transition">Contact</a>
+        <a href="reservation.html" class="bg-smash hover:bg-smashDark text-white font-display text-xl tracking-wider px-5 py-2 rounded-md transition" aria-current="page">Réserver</a>
+      </nav>
+      <button id="menu-toggle" class="md:hidden p-2 text-charcoal" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu md:hidden border-t-2 border-charcoal bg-cream">
+      <nav class="flex flex-col px-6 py-4 gap-3" aria-label="Navigation mobile">
+        <a href="index.html" class="font-display text-2xl">Accueil</a>
+        <a href="menu.html" class="font-display text-2xl">Menu</a>
+        <a href="histoire.html" class="font-display text-2xl">Histoire</a>
+        <a href="contact.html" class="font-display text-2xl">Contact</a>
+        <a href="reservation.html" class="bg-smash text-white font-display text-2xl text-center py-3 rounded-md">Réserver une table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="bg-charcoal text-cream py-16 sm:py-20 text-center">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <p class="accent-marker text-mustard text-2xl mb-2">Réservation</p>
+        <h1 class="font-display text-6xl sm:text-8xl tracking-wider">Une table ?</h1>
+        <p class="mt-4 text-lg text-cream/85">Brunch (8h-14h) ou soir (19h-2h), 7j/7. Réponse par email sous 24h.</p>
+      </div>
+    </section>
+
+    <section class="py-12 sm:py-16 bg-cream">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 grid lg:grid-cols-3 gap-10">
+        <!-- Form -->
+        <div class="lg:col-span-2 bg-white border-2 border-charcoal rounded-lg p-6 sm:p-8">
+          <form
+            id="reservation-form"
+            action="https://formspree.io/f/REMPLACER"
+            method="POST"
+            class="space-y-5"
+            novalidate
+          >
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="firstname" class="form-label">Prénom *</label>
+                <input id="firstname" name="prenom" type="text" required autocomplete="given-name" class="form-input" />
+              </div>
+              <div>
+                <label for="lastname" class="form-label">Nom *</label>
+                <input id="lastname" name="nom" type="text" required autocomplete="family-name" class="form-input" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="email" class="form-label">Email *</label>
+                <input id="email" name="email" type="email" required autocomplete="email" class="form-input" placeholder="prenom@exemple.fr" />
+              </div>
+              <div>
+                <label for="phone" class="form-label">Téléphone *</label>
+                <input id="phone" name="telephone" type="tel" required autocomplete="tel" class="form-input" placeholder="06 XX XX XX XX" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-5">
+              <div>
+                <label for="reservation-date" class="form-label">Date *</label>
+                <input id="reservation-date" name="date" type="date" required class="form-input" />
+              </div>
+              <div>
+                <label for="reservation-time" class="form-label">Heure *</label>
+                <select id="reservation-time" name="heure" required class="form-select">
+                  <option value="">— Choisir —</option>
+                  <optgroup label="Brunch">
+                    <option>08:00</option>
+                    <option>09:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                  </optgroup>
+                  <optgroup label="Soir">
+                    <option>19:00</option>
+                    <option>19:30</option>
+                    <option>20:00</option>
+                    <option>20:30</option>
+                    <option>21:00</option>
+                    <option>21:30</option>
+                    <option>22:00</option>
+                    <option>23:00</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div>
+                <label for="guests" class="form-label">Couverts *</label>
+                <select id="guests" name="couverts" required class="form-select">
+                  <option value="">—</option>
+                  <option>1</option><option>2</option><option>3</option><option>4</option>
+                  <option>5</option><option>6</option><option>7</option><option>8</option>
+                  <option value="9+">9 et +</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="service" class="form-label">Service</label>
+              <select id="service" name="service" class="form-select">
+                <option value="brunch">Brunch (8h - 14h)</option>
+                <option value="soir" selected>Soir (19h - 2h)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="form-label">Demande particulière</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Allergies, anniversaire, fauteuil, terrasse… dites-nous tout."></textarea>
+            </div>
+
+            <!-- Honeypot anti-spam -->
+            <div class="hidden" aria-hidden="true">
+              <label>Ne pas remplir <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+            </div>
+
+            <fieldset>
+              <legend class="sr-only">Consentement</legend>
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" name="consent" required class="mt-1 w-5 h-5 accent-smash" />
+                <span class="text-sm text-charcoal/80">J'accepte que mes informations soient utilisées uniquement pour traiter ma demande de réservation. *</span>
+              </label>
+            </fieldset>
+
+            <button type="submit" class="w-full sm:w-auto bg-smash hover:bg-smashDark text-white font-display text-2xl tracking-wider px-8 py-4 rounded-md transition">
+              Envoyer la demande
+            </button>
+            <p class="text-xs text-charcoal/60">* Champs obligatoires. Une confirmation vous sera envoyée par email.</p>
+          </form>
+        </div>
+
+        <!-- Sidebar infos -->
+        <aside class="space-y-6">
+          <div class="bg-mustard text-charcoal p-6 rounded-lg border-2 border-charcoal">
+            <h2 class="font-display text-3xl tracking-wide mb-2">Bon à savoir</h2>
+            <ul class="space-y-2 text-charcoal/90 text-sm">
+              <li>• Les réservations sont confirmées <strong>sous 24h</strong> par email.</li>
+              <li>• Tables tenues 15 min après l'heure de réservation.</li>
+              <li>• Pour <strong>9 personnes ou plus</strong>, on vous rappelle pour caler ensemble.</li>
+              <li>• Allergies : précisez-les dans le message.</li>
+            </ul>
+          </div>
+          <div class="bg-charcoal text-cream p-6 rounded-lg">
+            <h2 class="font-display text-3xl tracking-wide text-mustard mb-2">Urgent ?</h2>
+            <p class="text-cream/85 text-sm mb-3">Pour le jour-même, mieux vaut nous appeler directement.</p>
+            <p class="font-display text-2xl tracking-wider">+33 X XX XX XX XX</p>
+            <p class="text-xs text-cream/60 mt-1">Numéro à compléter</p>
+          </div>
+          <div class="bg-cream border-2 border-charcoal p-6 rounded-lg">
+            <h2 class="font-display text-3xl tracking-wide mb-2">Horaires</h2>
+            <p class="text-charcoal/90">7 jours sur 7</p>
+            <p class="text-charcoal/90">Brunch · 8h — 14h</p>
+            <p class="text-charcoal/90">Soir · 19h — 2h</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-charcoal text-cream py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+      <div>
+        <p class="font-display text-4xl tracking-wider">SMASH</p>
+        <p class="text-cream/70 mt-2 text-sm">Smash burgers · Brunch · Bar<br/>Châteauroux, 36000</p>
+      </div>
+      <nav aria-label="Liens du pied de page">
+        <h4 class="font-display text-xl mb-3 tracking-wide">Navigation</h4>
+        <ul class="space-y-1 text-cream/80">
+          <li><a class="hover:text-mustard" href="index.html">Accueil</a></li>
+          <li><a class="hover:text-mustard" href="menu.html">Menu</a></li>
+          <li><a class="hover:text-mustard" href="reservation.html">Réservation</a></li>
+          <li><a class="hover:text-mustard" href="histoire.html">Histoire</a></li>
+          <li><a class="hover:text-mustard" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4 class="font-display text-xl mb-3 tracking-wide">Horaires</h4>
+        <p class="text-cream/80">7j/7<br/>Brunch · 8h — 14h<br/>Soir · 19h — 2h</p>
+      </div>
+      <div>
+        <h4 class="font-display text-xl mb-3 tracking-wide">Suivez-nous</h4>
+        <ul class="space-y-1 text-cream/80">
+          <li><a class="hover:text-mustard" href="#" rel="noopener">Instagram</a></li>
+          <li><a class="hover:text-mustard" href="#" rel="noopener">Facebook</a></li>
+          <li><a class="hover:text-mustard" href="#" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 pt-6 border-t border-cream/20 text-cream/60 text-sm flex flex-col sm:flex-row gap-2 justify-between">
+      <p>© <span data-current-year>2026</span> SMASH — Tous droits réservés.</p>
+      <p>Conçu avec exigence à Châteauroux.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
