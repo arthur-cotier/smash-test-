@@ -1,0 +1,125 @@
+/* SMASH — styles personnalisés (en complément de Tailwind) */
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible {
+  outline: 3px solid #dc2626;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Liens accessibles dans le contenu */
+.prose a { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+/* Texture papier subtile pour vibe rétro grill */
+.bg-paper {
+  background-color: #fef9ef;
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(0,0,0,0.025) 1%, transparent 1%),
+    radial-gradient(circle at 75% 75%, rgba(0,0,0,0.025) 1%, transparent 1%);
+  background-size: 40px 40px;
+}
+
+/* Marquee bandeau promo */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 32s linear infinite;
+  will-change: transform;
+}
+
+/* Cartes menu */
+.menu-card {
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.menu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Accent "marker" rétro */
+.accent-marker {
+  font-family: 'Permanent Marker', cursive;
+  display: inline-block;
+  transform: rotate(-3deg);
+  letter-spacing: .02em;
+}
+
+/* Tampon rétro */
+.stamp {
+  border: 4px double currentColor;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .05em;
+  transform: rotate(-6deg);
+}
+
+/* Inputs formulaires */
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: .75rem 1rem;
+  border: 2px solid #171413;
+  border-radius: .5rem;
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #171413;
+}
+.form-textarea { min-height: 7rem; resize: vertical; }
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220,38,38,.18);
+}
+.form-label {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: .04em;
+  margin-bottom: .25rem;
+  color: #171413;
+}
+
+/* Mobile menu */
+.mobile-menu { display: none; }
+.mobile-menu.open { display: block; }
+
+/* Cacher la scrollbar du marquee */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Séparateur "ticket" entre prix */
+.dotted-fill {
+  flex: 1;
+  border-bottom: 2px dotted rgba(23,20,19,.35);
+  margin: 0 .5rem .35rem;
+  min-width: 1.5rem;
+}
+
+/* Section heading flourish */
+.section-eyebrow {
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .04em;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
